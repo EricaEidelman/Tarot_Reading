@@ -32,8 +32,6 @@ def shuffle_deck(deck):
         i -= 1
     return shuffled_deck
 
-print(shuffle_deck(complete_deck))
-
 # Function to select three cards
 def card_selector(shuffled_deck):
     i = 78
