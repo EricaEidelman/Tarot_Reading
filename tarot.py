@@ -26,9 +26,13 @@ def shuffle_deck(deck):
     i = 78
     shuffled_deck = []
     while i > 0:
-        shuffled_deck.append(deck[random.randrange(0,i)])
+        index = random.randrange(0,i)
+        shuffled_deck.append(deck[index])
+        deck.remove(deck[index])
         i -= 1
     return shuffled_deck
+
+print(shuffle_deck(complete_deck))
 
 # Function to select three cards
 def card_selector(shuffled_deck):
